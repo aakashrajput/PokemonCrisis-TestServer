@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aakashrajput/pokemoncrisis.git"
+    "url": "git+https://github.com/aakashrajput/PokemonCrisis-Server.git"
   },
   "keywords": [
     "pokemoncrisis"
@@ -16,9 +16,9 @@
   "author": "Aakash Singh",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/aakashrajput/pokemoncrisis/issues"
+    "url": "https://github.com/aakashrajput/PokemonCrisis-Server/issues"
   },
-  "homepage": "https://github.com/aakashrajput/pokemoncrisis#readme",
+  "homepage": "https://github.com/aakashrajput/PokemonCrisis-Server#readme",
   "dependencies": {
     "express": "^4.16.3",
     "socket.io": "^2.0.4",
