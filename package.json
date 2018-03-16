@@ -1,0 +1,27 @@
+{
+  "name": "pokemoncrisis",
+  "version": "1.0.0",
+  "description": "A pokemon Battle Simulator",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aakashrajput/pokemoncrisis.git"
+  },
+  "keywords": [
+    "pokemoncrisis"
+  ],
+  "author": "Aakash Singh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aakashrajput/pokemoncrisis/issues"
+  },
+  "homepage": "https://github.com/aakashrajput/pokemoncrisis#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "socket.io": "^2.0.4",
+    "socket.io-client": "^2.0.4"
+  }
+}
