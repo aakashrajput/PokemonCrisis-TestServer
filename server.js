@@ -1,20 +1,21 @@
-var socket = require( 'socket.io' );
-var express = require( 'express' );
-var http = require( 'http' );
+global.socket = require( 'socket.io' );
+global.multer  =   require('multer');
+global.Express = require( 'express' );
+global.app = Express();
+global.Config = require('./config/config.js');
+global.Handler = require('./handler.js');
+global.http = require( 'http' );
+global.server = require('http').createServer(app);
+global.io = require('socket.io').listen(server);
+global.Request = require('request');
+var User = require('./tools/user.js')
 
-var app = express();
-var server = http.createServer( app );
 
-var io = socket.listen( server );
-console.log( "\n\nPokemon Server Connected !\n Running on Port 8080 \n" );
-io.sockets.on( 'connection', function( client ) {
-    console.log( "New User Connected !" );
+server.listen(process.env.PORT || Config.port);
+console.log('Server Started....');
+console.log('Working on Port:' + Config.port);
 
-    client.on( 'message', function( data ) {
-        console.log( 'Message received ' + data.name + ":" + data.message );
 
-        io.sockets.emit( 'message', { name: data.name, message: data.message } );
-    });
-});
 
-server.listen( 8080 );
+
+
